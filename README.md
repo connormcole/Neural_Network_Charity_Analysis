@@ -9,7 +9,7 @@ Utilize neural net machine learning model to predict which charity applications 
 - The target of the model is the "IS_SUCCESSFUL" column of the application_df dataframe. 
 - The features of the model are all remaining columns of the application_df dataframe, excluding the ones with dtype "object".
 
-![data_frame](/Images/data_frame.png)
+![image](https://user-images.githubusercontent.com/92554586/159190629-e90cda1a-19b9-463a-9a1a-d5b615e815e8.png)
 
 ### Compiling, Training, and Evaluating the Model
 - In my optimization file, I used three hidden layers for my model. Layer one had 80 neurons, layer two had 40, and layer three had 20. Each layer used the "relu" activation function, with the exception being the output layer using sigmoid. I used 80 neurons in the first layer because it was approximately double the number of features inputted (44), with each following layer having half the neurons of the previous layer. I used the "relu" activation function because there were no negative values in the data that could have influenced the model, so everything was effectively scaled between 0 and 1. The sigmoid function also scaled the data appropriately in the output layer.
@@ -19,6 +19,6 @@ Utilize neural net machine learning model to predict which charity applications 
 ## Summary
 The model was 72.47% accurate from the initial parameters, and my optimization attempt was marginally better at 72.55%. I would recommend a supervised logistic regression model for better accuracy because it would run faster, not be prone to overfitting, and require much less tweaking.
 
-![model_1](/Images/model_1.png)
+![image](https://user-images.githubusercontent.com/92554586/159190662-0734b5ba-287e-4ab5-817a-e575466d1491.png)
 
-![model_2](/Images/model_2.png)
+![image](https://user-images.githubusercontent.com/92554586/159190677-39d8fc69-2bd9-4df5-bfaa-423ab88a23bd.png)
